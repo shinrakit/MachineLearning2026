@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#102a43"><title>ML Study Lab · 225371[3]</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">ข้ามไปยังเนื้อหา</a>
+<div class="app-shell">
+  <aside id="sidebar" class="sidebar" aria-label="เมนูหลัก">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">ML</span><div><strong>Study Lab</strong><small>225371[3]</small></div></div>
+    <button id="close-drawer" class="icon-button drawer-close" aria-label="ปิดเมนู">×</button>
+    <nav class="side-nav">
+      <a class="active" href="#dashboard">ภาพรวม</a><a href="#chapters">บทเรียน</a><a href="#calculators">Calculator labs</a><a href="#quiz">Quiz practice</a><a href="#exam">Mock exam</a><a href="#notes">Print notes</a>
+    </nav>
+    <div class="sidebar-foot"><button id="theme-toggle" class="side-control" type="button">◐ <span>โหมดมืด</span></button><label class="scale-control">Aa <input id="font-scale" type="range" min="90" max="115" step="5" value="100" aria-label="ขนาดตัวอักษร"></label></div>
+  </aside>
+  <div id="drawer-scrim" class="scrim" hidden></div>
+  <main id="main" class="main">
+    <header class="topbar"><button id="menu-toggle" class="icon-button" aria-label="เปิดเมนู" aria-expanded="false">☰</button><div><p class="eyebrow">MACHINE LEARNING · THAI STUDY DASHBOARD</p><h1>เรียนรู้แบบเห็นภาพ ทำโจทย์ได้จริง</h1></div><div class="top-actions"><span id="streak-label" class="streak">🔥 0 วัน</span><button id="reset" class="text-button">รีเซ็ต</button></div></header>
+    <section id="dashboard" class="hero-grid" aria-labelledby="welcome-title">
+      <div class="welcome panel"><p class="eyebrow">ยินดีต้อนรับกลับ</p><h2 id="welcome-title">เส้นทางของคุณวันนี้</h2><p>ทบทวนทีละหัวข้อ แล้วลงมือทดลองกับข้อมูลจำลอง</p><a class="button" href="#chapters">เริ่มบทเรียน →</a></div>
+      <div class="progress-card panel"><div class="ring" id="progress-ring" role="img" aria-label="ความคืบหน้า 0 เปอร์เซ็นต์"><span id="progress-percent">0%</span></div><div><strong>ความคืบหน้ารวม</strong><p id="progress-detail" class="muted">0 จาก 3 บท</p><div id="badges" class="badges" aria-label="เหรียญรางวัล"></div></div></div>
+    </section>
+    <section id="chapters" class="section" aria-labelledby="chapters-title"><div class="section-heading"><div><p class="eyebrow">LEARN</p><h2 id="chapters-title">บทเรียนแบบเป็นขั้นตอน</h2></div><span class="section-count">3 CHAPTERS</span></div><div id="chapter-tabs" class="chapter-cards" role="tablist" aria-label="เลือกบท"></div><div id="chapter-panels"></div></section>
+    <section id="calculators" class="section" aria-labelledby="labs-title"><div class="section-heading"><div><p class="eyebrow">PRACTICE LABS</p><h2 id="labs-title">ทดลองด้วยตัวเอง</h2></div></div><div id="calculator-content"></div></section>
+    <section id="quiz" class="section" aria-labelledby="quiz-title"><div class="section-heading"><div><p class="eyebrow">CHECK YOUR UNDERSTANDING</p><h2 id="quiz-title">Quiz practice</h2></div><span id="score" class="score-pill" aria-live="polite"></span></div><div id="quiz-controls" class="filters"></div><div id="quiz-mount"></div></section>
+    <section id="exam" class="section" aria-labelledby="exam-title"><div class="section-heading"><div><p class="eyebrow">EXAM MODE</p><h2 id="exam-title">Mock exam</h2></div><span id="timer" class="timer" aria-live="polite"></span></div><p class="notice">ข้อสอบจะไม่แสดงเฉลยระหว่างทำ เฉลยและคะแนนจะแสดงหลังส่งเท่านั้น สถานะและเวลาจะกู้คืนได้เมื่อเปิดหน้านี้อีกครั้ง</p><div id="exam-questions"></div></section>
+    <section id="notes" class="section print-notes" aria-labelledby="notes-title"><div class="section-heading"><div><p class="eyebrow">OFFLINE REVIEW</p><h2 id="notes-title">Print notes</h2></div><button id="print" class="button secondary">พิมพ์หน้านี้</button></div><div id="notes-content"></div></section>
+    <footer>Study aid ภาษาไทย · ตรวจทานกับเอกสารอาจารย์ก่อนใช้งานจริง</footer>
+  </main>
+</div>
+<div id="confetti" class="confetti" aria-hidden="true"></div>
+<script type="module" src="assets/js/app.js"></script>
+</body></html>

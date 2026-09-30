@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "confusionMatrix": {"tp": 45, "tn": 940, "fp": 5, "fn": 10},
+  "kmeans": {"points": [[1,1],[2,1],[8,8],[9,8]], "centroids": [[1,1],[8,8]]},
+  "association": {"transactions": [["bread","milk"],["bread","butter"],["milk","butter"]], "minSupport": 0.66}
+}

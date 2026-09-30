@@ -1,0 +1,8 @@
+{
+  "version": 1,
+  "chapters": [
+    {"id": "ch1", "title": "Model Evaluation", "content": "content/01-model-evaluation.md"},
+    {"id": "ch2", "title": "Clustering", "content": "content/02-clustering.md"},
+    {"id": "ch3", "title": "Association Rules", "content": "content/03-association-rules.md"}
+  ]
+}
